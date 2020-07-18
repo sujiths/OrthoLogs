@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarThumbVertical="@color/grey">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Comorbidity"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkBoxdiab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/darker_gray"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="Diabetes"
+                    android:layout_marginLeft="10dp"/>
+                <CheckBox
+                    android:id="@+id/checkBoxhyper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/darker_gray"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginLeft="10dp"
+                    android:text="HyperTension" />
+                <CheckBox
+                    android:id="@+id/checkBoxcas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/darker_gray"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginLeft="10dp"
+                    android:text="CAD" />
+                <CheckBox
+                    android:id="@+id/checkBoxCkd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/darker_gray"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginLeft="10dp"
+                    android:text="CKD" />
+                <CheckBox
+                    android:id="@+id/checkBoxCopd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/darker_gray"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginLeft="10dp"
+                    android:text="COPD"/>
+                <CheckBox
+                    android:id="@+id/checkBoxOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@android:color/darker_gray"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginLeft="10dp"
+                    android:text="Others, Describe below"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/editbox"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.10"
+            android:background="@color/actionbar"
+            android:minHeight="?attr/actionBarSize"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:fitsSystemWindows="true"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/collapse_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:background="@color/actionbar">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Krishnan,34"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/collapse_subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Press down for more details"
+                        android:textSize="14dp"
+                        android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/followup_details_down"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:layout_weight="0.20"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/down_white"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <net.cachapa.expandablelayout.ExpandableLayout
+                    android:id="@+id/expandable_layout_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:el_duration="1000"
+                    app:el_expanded="false">
+                </net.cachapa.expandablelayout.ExpandableLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_margin="10dp"
+                    android:text="Diagnosis"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/editbox"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Previous Visit Dates"
+                    android:textSize="20sp"/>
+
+                <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/visit_dates_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@android:color/darker_gray"
+                    android:entries="@array/dates_tmp"
+                    />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal"
+            android:background="@color/actionbar">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.80"/>
+            <ImageView
+                android:id="@+id/to_health"
+                android:layout_width="0dp"
+                android:clickable="true"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_weight="0.20"
+                android:layout_margin="20dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/right_white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

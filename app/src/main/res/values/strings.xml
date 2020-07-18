@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">OrthoLogs</string>
+    <string name="permission_denied_dialog_message">Please grant the permission</string>
+    <string name="permission_denied_never_ask_again_dialog_message">This permission is required for this application</string>
+    <string name="label_Ok">@android:string/ok</string>
+    <string name="label_cancel">@android:string/cancel</string>
+    <string-array name="investigations">
+        <item>Lab Investigation</item>
+        <item>CT Scan</item>
+        <item>MRI Scan</item>
+        <item>X-Ray</item>
+    </string-array>
+
+    <string-array name="dates_tmp">
+        <item>16-Oct-2019</item>
+        <item>14-Nov-2019</item>
+        <item>15-Dec-2020</item>
+    </string-array>
+</resources>

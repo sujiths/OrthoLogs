@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00B0FF</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="orange">#FF3D00</color>
+    <color name="green">#00E676</color>
+    <color name="teal">#1DE9B6</color>
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="buttontext">#FF000000</color>
+    <color name="buttongrey">#999999</color>
+
+    <color name="grey">#EEECEC</color>
+    <color name="actionbar">#1565c0</color>
+    <color name="button">#6200EE</color>
+    <color name="spinnerpop">#6200EE</color>
+    <color name="buttonpressed">#03DAC6</color>
+    <color name="transparent">#AB000000</color>
+</resources>

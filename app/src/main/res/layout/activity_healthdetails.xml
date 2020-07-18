@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.10"
+            android:background="@color/actionbar"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="0.80">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbarThumbVertical="@color/grey">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Diagnosis"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/editbox"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:padding="10dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Search tags for future reference"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"/>
+                    <LinearLayout
+                        android:id="@+id/search_tag_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/editbox"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/searchtag"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="test bone"
+                                android:textColor="@color/white"
+                                android:padding="5dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/searchtag"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:text="broken bone">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="bone broken"
+                                android:textColor="@color/white"
+                                android:padding="5dp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Comorbidity"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <CheckBox
+                        android:id="@+id/checkBoxdiab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/darker_gray"
+                        android:textColor="@android:color/darker_gray"
+                        android:text="Diabetes"
+                        android:layout_marginLeft="30dp"/>
+                    <CheckBox
+                        android:id="@+id/checkBoxhyper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/darker_gray"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginLeft="30dp"
+                        android:text="HyperTension" />
+                    <CheckBox
+                        android:id="@+id/checkBoxcas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/darker_gray"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginLeft="30dp"
+                        android:text="CAD" />
+                    <CheckBox
+                        android:id="@+id/checkBoxCkd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/darker_gray"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginLeft="30dp"
+                        android:text="CKD" />
+                    <CheckBox
+                        android:id="@+id/checkBoxCopd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/darker_gray"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginLeft="30dp"
+                        android:text="COPD"/>
+                    <CheckBox
+                        android:id="@+id/checkBoxOther"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@android:color/darker_gray"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginLeft="30dp"
+                        android:text="Others, Describe below"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/editbox"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_margin="30dp"
+                        android:padding="10dp"
+                        />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/buttons"
+            android:layout_weight="0.10"
+            android:orientation="horizontal"
+            android:background="@color/actionbar">
+
+            <ImageView
+                android:id="@+id/back_patient"
+                android:layout_width="0dp"
+                android:clickable="true"
+                android:background="?selectableItemBackgroundBorderless"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_weight="0.20"
+                android:layout_margin="20dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/left_white"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.60"/>
+            <ImageView
+                android:id="@+id/to_investigations"
+                android:layout_width="0dp"
+                android:clickable="true"
+                android:background="?selectableItemBackgroundBorderless"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_weight="0.20"
+                android:layout_margin="20dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/right_white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
